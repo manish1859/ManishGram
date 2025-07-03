@@ -1,0 +1,45 @@
+.create-page{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding:78px;
+  height: auto;
+  background-color: #f8f9fc;
+}
+.create-card{
+ background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+  width: 300px;
+}
+.h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
+}
+.p1{
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+}
+.p2{
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.input-field::placeholder {
+  font-size: 14px; 
+  color: grey;     
+}
