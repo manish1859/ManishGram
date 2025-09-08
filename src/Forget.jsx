@@ -17,8 +17,8 @@ function Forget() {
       const res = await axios.post("http://localhost:5000/api/forget", {
         email,
       });
-      setMessage(res.data.message); // Server se aaya message
-      setEmail(""); // Input clear
+      setMessage(res.data.message); 
+      setEmail(""); 
     } catch (error) {
       console.error("API Error:", error);
       setMessage("Failed to send reset link.");

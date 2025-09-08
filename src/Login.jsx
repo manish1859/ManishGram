@@ -17,6 +17,7 @@ const Login = () => {
 
     const savedName = localStorage.getItem("savedName");
     const savedPassword = localStorage.getItem("savedPassword");
+    
 
     if (!savedName || !savedPassword) {
       localStorage.setItem("savedName", name);
@@ -37,7 +38,6 @@ const Login = () => {
   const handleForget = () => {
     localStorage.removeItem("savedPassword");
     setPassword("");
-    navigate('/password/reset');
   };
 
   return (
@@ -45,11 +45,7 @@ const Login = () => {
       <div className="card" style={{ border: 'none' }}>
         <h2 className="logo">Manishgram</h2>
         <form onSubmit={handleLogin} className="form">
-          <input
-            type="text"
-            placeholder="Phone number, username or email"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+          <input type="text"placeholder="Phone number, username or email" value={name}onChange={(e) => setName(e.target.value)}
             className="inp1"
           />
 

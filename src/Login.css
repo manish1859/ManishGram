@@ -35,10 +35,9 @@
     background-color: #fafafa;
     font-size: 14px;
 }
-
-
-.input-wrapper {
-  /* position: relative; */
+ 
+ .input-wrapper {
+  
   width: 100%;
   max-width: 400px;
   margin: auto;
